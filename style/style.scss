@@ -757,8 +757,12 @@ body {
 }
 
 /* ------------botones------------ */
+.enlaceBoton{
+  text-decoration: none;
+}
 /* botón mediano */
 .btn-md {
+  
   display: flex;
   align-items: center;
   font-weight: normal;
@@ -1204,16 +1208,57 @@ dialog{
 .mapExplorer{
   gap: 1rem;
 }
+.explorarCarrusel{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  
+}
 
 
-@media (max-width: 2000px) {
+
+@media (max-width: 4000px) {
   .mapExplorer{
-    border: solid 1px blue;
+    // border: solid 1px rgb(255, 174, 0);
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 50%;
+    height: 30%;
   }
+
+  .mapExplorer .reserva-card{
+    // border: solid 1px red;
+    height: 100%;
+    width: 100%;
+  }
+
+  .mapExplorer iframe{
+    border: solid 1px rgb(0, 255, 98);
+    width: 30%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+  .explorarCarrusel{
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    width: 100%;
+    // overflow-x: hidden;
+    // border:  solid 2px pink;
+  }
+  
+  .explorarCarrusel .container{
+    width: 100%;
+    // height: 100%;
+    // overflow-x: scroll;
+    // overflow-y: hidden;
+  }
+  .explorarCarrusel .container .cards{
+    height: 100%;
+    width: 20%;
+  }
+
 }
 
 @media (max-width: 790px) {
@@ -1223,20 +1268,38 @@ dialog{
     flex-direction: column;
     width: 100%;
     height: 50%;
-    border: solid 1px blue;
+    // border: solid 1px blue;
   }
   
   .mapExplorer .reserva-card{
-    border: solid 1px red;
+    // border: solid 1px rgb(38, 0, 255);
     height: auto;
     width: auto;
     width: 100%;
   }
 
   .mapExplorer iframe{
-    border: solid 1px red;
+    // border: solid 1px red;
     width: 100%;
     height: 100%;
+    
+  }
+  .explorarCarrusel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  .explorarCarrusel .container{
+    width: 100%;
+    // height: 20%;
+    
+  }
+  .explorarCarrusel .container .cards{
+    height: 20%;
+    width: 100%;
+    border:  solid 2px green;
   }
 }
 

@@ -752,6 +752,10 @@ body {
 }
 
 /* ------------botones------------ */
+.enlaceBoton {
+  text-decoration: none;
+}
+
 /* botón mediano */
 .btn-md {
   display: flex;
@@ -1096,13 +1100,42 @@ dialog {
   gap: 1rem;
 }
 
-@media (max-width: 2000px) {
+.explorarCarrusel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 4000px) {
   .mapExplorer {
-    border: solid 1px blue;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 50%;
+    height: 30%;
+  }
+  .mapExplorer .reserva-card {
+    height: 100%;
+    width: 100%;
+  }
+  .mapExplorer iframe {
+    border: solid 1px rgb(0, 255, 98);
+    width: 30%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+  .explorarCarrusel {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    width: 100%;
+  }
+  .explorarCarrusel .container {
+    width: 100%;
+  }
+  .explorarCarrusel .container .cards {
+    height: 100%;
+    width: 20%;
   }
 }
 @media (max-width: 790px) {
@@ -1111,17 +1144,28 @@ dialog {
     flex-direction: column;
     width: 100%;
     height: 50%;
-    border: solid 1px blue;
   }
   .mapExplorer .reserva-card {
-    border: solid 1px red;
     height: auto;
     width: auto;
     width: 100%;
   }
   .mapExplorer iframe {
-    border: solid 1px red;
     width: 100%;
     height: 100%;
+  }
+  .explorarCarrusel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+  .explorarCarrusel .container {
+    width: 100%;
+  }
+  .explorarCarrusel .container .cards {
+    height: 20%;
+    width: 100%;
+    border: solid 2px green;
   }
 }/*# sourceMappingURL=style.css.map */
