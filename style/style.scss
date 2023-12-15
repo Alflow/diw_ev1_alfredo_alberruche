@@ -70,6 +70,7 @@ body {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-right: 1rem;
 }
 
 .explorar {
@@ -250,6 +251,57 @@ body {
 .menu-btn.open {
   border: 0.2rem solid red;
 }
+
+// __________________________LANDING------------------
+
+.containerHero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 2000px) {
+  .containerHero{
+    width: 100%;
+    height: 80vh;
+  }
+  .containerHero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+}
+
+@media (max-width: 790px) {
+  .containerHero{
+    width: 100%;
+    height: 50vh;
+    
+  }
+  .containerHero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+}
+
+
+@media (max-width: 340px) {
+  .containerHero{
+    width: 100%;
+    height: 30vh;
+  }
+  .containerHero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+  }
+}
+
 
 /* ____________CARTAS DE ESTANCIA_____________________ */
 
