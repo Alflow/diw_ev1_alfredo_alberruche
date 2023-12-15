@@ -1091,4 +1091,37 @@ dialog {
   to {
     transform: scale(1.09);
   }
+}
+.mapExplorer {
+  gap: 1rem;
+}
+
+@media (max-width: 2000px) {
+  .mapExplorer {
+    border: solid 1px blue;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+  }
+}
+@media (max-width: 790px) {
+  .mapExplorer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    border: solid 1px blue;
+  }
+  .mapExplorer .reserva-card {
+    border: solid 1px red;
+    height: auto;
+    width: auto;
+    width: 100%;
+  }
+  .mapExplorer iframe {
+    border: solid 1px red;
+    width: 100%;
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
