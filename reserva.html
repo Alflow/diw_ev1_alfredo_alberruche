@@ -45,6 +45,31 @@
       <a href="">Restaurantes</a>
     </nav>
     <article class="main">
+      <dialog id="miDialogo">
+        <div class="popup">
+          <button class="dismiss" type="button">X</button>
+          <div class="popup-cabecera">
+            <div class="imagen-popup">
+              <img src="media/person_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="content">
+              <span class="popup-title">Bienvenido:</span>
+              <p class="message">Por favor, ingrese sus datos de acceso</p>
+              <a href="">Acceder</a>
+              <a href="">Registrarme</a>
+            </div>
+            
+            <div class="actions">
+              <hr>
+              <a href="">Hoteles</a>
+              <a href="">Villas</a>
+              <a href="">Apartamentos</a>
+              <a href="">Visitas guiadas</a>
+              <a href="">Restaurantes</a>
+            </div>
+          </div>
+        </div>
+    </dialog>
       <div class="container-reserva">
         <div class="navegacion-rapida">
           <i class="fas fa-map"></i>
@@ -136,5 +161,21 @@
     <footer class="footer">
       <small>OASIS ITEMS © · Alfredo Alberruche</small>
     </footer>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      let menuOpen = false;
+      menuBtn.addEventListener("click", () => {
+        if (!menuOpen) {
+          menuBtn.classList.add("open");
+          menuOpen = true;
+        } else {
+          menuBtn.classList.remove("open");
+          menuOpen = false;
+        }
+      });
+    </script>
+    <script src="scripts/burguer.js"></script>
+    <script src="scripts/loginPopup.js"></script>
+    <script src="scripts/menu.js"></script>
   </body>
 </html>

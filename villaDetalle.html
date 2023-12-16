@@ -46,6 +46,32 @@
     </nav>
     <!-- CONTENIDO MAIN -->
     <article class="main">
+    <dialog id="miDialogo">
+        <div class="popup">
+          <button class="dismiss" type="button">X</button>
+          <div class="popup-cabecera">
+            <div class="imagen-popup">
+              <img src="media/person_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="content">
+              <span class="popup-title">Bienvenido:</span>
+              <p class="message">Por favor, ingrese sus datos de acceso</p>
+              <a href="">Acceder</a>
+              <a href="">Registrarme</a>
+            </div>
+            
+            <div class="actions">
+              <hr>
+              <a href="">Hoteles</a>
+              <a href="">Villas</a>
+              <a href="">Apartamentos</a>
+              <a href="">Visitas guiadas</a>
+              <a href="">Restaurantes</a>
+            </div>
+          </div>
+        </div>
+    </dialog>
+      
       <div class="details-container">
         <div class="navegacion-rapida">
           <i class="fas fa-map"></i>
@@ -103,9 +129,10 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <div class="card-info-botones">
-              <p>Disponibilidad</p>
-              <p>Precio Final</p>
-              <p>Reviews</p>
+              <a href=""><p>Disponibilidad</p></a>
+              <a href=""><p>Precio final</p></a>
+              <a href=""><p>Reviews</p></a>
+              
             </div>
           </div>
         </div>
@@ -131,5 +158,8 @@
         }
       });
     </script>
+    <script src="scripts/burguer.js"></script>
+    <script src="scripts/loginPopup.js"></script>
+    <script src="scripts/menu.js"></script>
   </body>
 </html>
