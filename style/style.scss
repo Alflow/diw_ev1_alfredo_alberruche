@@ -221,7 +221,6 @@ body {
 
 
 
-
 .menuPopUp {
   position: fixed;
   display: flex;
@@ -235,6 +234,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
   z-index: 1100; 
   font-size: 2rem;
+  
 }
 
 
@@ -1122,6 +1122,10 @@ body {
 
 
 // DIALOGO 
+#miDialogo{
+  border-radius: 0.2rem;
+}
+
 dialog {
   position: fixed;
   top: 10%;
