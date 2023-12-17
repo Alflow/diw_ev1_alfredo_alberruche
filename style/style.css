@@ -988,6 +988,9 @@ body {
   transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
   color: #000000;
 }
+.can-toggle label .can-toggle__switch:hover {
+  cursor: pointer;
+}
 .can-toggle input[type=checkbox]:focus ~ label .can-toggle__switch:after, .can-toggle input[type=checkbox]:hover ~ label .can-toggle__switch:after {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }

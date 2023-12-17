@@ -980,6 +980,9 @@ body {
         color: $can-toggle-off-color;
       }
     }
+    .can-toggle__switch:hover{
+      cursor: pointer;
+    }
   }
 }
 
