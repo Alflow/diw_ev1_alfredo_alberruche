@@ -70,7 +70,7 @@ body {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-right: 1rem;
+  // margin-right: 1rem;
 }
 
 .explorar {
@@ -178,7 +178,11 @@ body {
 }
 .main {
   grid-area: main;
-  padding: 2rem;
+  
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 // _________HEADER Y NAV___________________________
@@ -194,64 +198,29 @@ body {
   height: auto;
 }
 
-.menu-btn {
-  width: 4rem;
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  border: 3px solid #000000;
-  border-radius: 0.2rem;
-}
 
-.menu-btn__burger {
-  display: flex;
-  width: 3rem;
-  height: 0.3rem;
-  background: #000000;
-  transition: all 0.2s ease-in-out;
-}
 
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 6px;
-  background: #000000;
 
-  transition: all 0.2s ease-in-out;
-}
 
-.menu-btn__burger::before {
-  transform: translateY(-16px);
-}
+// -----------------------
 
-.menu-btn__burger::after {
-  transform: translateY(16px);
-}
 
-.menu-btn.open .menu-btn__burger {
-  transform: translateX(-50px);
-  background: transparent;
-}
 
-.menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
-  background: red;
-}
 
-.menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
-  background: red;
-}
 
-.menu-btn.open {
-  border: 0.2rem solid red;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menuPopUp {
   position: fixed;
@@ -280,8 +249,9 @@ body {
 }
 
 /* Estilos para tabletas grandes y PCs pequeños */
-@media (min-width: 1024px) {
-  .menu-btn{
+@media (min-width: 768px) {
+ 
+  .boton_hamburguesa{
     display: none;
   }
   
@@ -833,6 +803,9 @@ body {
 /* ------------botones------------ */
 .enlaceBoton{
   text-decoration: none;
+}
+.enlaceBoton .text{
+  font-weight: bold;
 }
 /* botón mediano */
 .btn-md {
@@ -1435,3 +1408,83 @@ height: 10%;
 
 
 
+// -----------------------------------------------
+.burguer-container{
+  cursor: pointer;
+  --distancia_btn-burger: 1rem;
+  --ancho_btn-burger: 3rem;
+  --alto_btn-burger: 5px;
+  --bd_radio: 1rem;
+  --dimension: 10px;
+  height: calc( var(--distancia_btn-burger) * 2 );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-burguer{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  transition: all ease .3s;
+  transition-delay: .075s;
+  font-size: var(--dimension);
+  border-radius: var(--bd_radio);
+  width: var(--ancho_btn-burger);
+  height: var(--alto_btn-burger);
+}
+
+.btn-burguer::before,
+.btn-burguer::after{
+  --distancia-seudoelemento: translateY( var(--distancia_btn-burger) );
+  --rotacion-inicial: rotateZ(0deg);
+  --rotacion-final: rotateZ(45deg);
+  --distancia-negacion: translateY(0);
+  content: '';
+  display: inline-flex;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background-color: black;
+  border-radius: inherit;
+  transform-origin: 50% 50%;
+  transition: inherit;
+  transition-delay: 0;
+  animation: inherit;
+  transform: var(--distancia-seudoelemento) var(--rotacion-inicial);
+}
+
+.btn-burguer::after{
+  --rotacion-final: rotateZ(-45deg);
+  --distancia-negativa: calc( var(--distancia_btn-burger) * -1);
+  --distancia-arriba: translateY( var(--distancia-negativa) );
+  --distancia-seudoelemento: var(--distancia-arriba) ;
+}
+
+#btn_burguer{
+  position: absolute;
+  opacity: 0;
+}
+
+#btn_burguer:checked ~ .btn-burguer{  
+  background-color:black;
+  animation: animar_btn-burger 1s ease 1 forwards;
+}
+
+#btn_burguer:not(:checked):focus ~ .btn-burguer{  
+  animation: desanimar_btn-burguer 1s ease 1 forwards;
+}
+
+
+@keyframes animar_btn-burger{ 
+  50% { transform: var(--distancia-negacion) var(--rotacion-inicial);}
+  100% { transform: var(--distancia-negacion) var(--rotacion-final);}
+}
+
+@keyframes desanimar_btn-burguer{ 
+  50% { transform: var(--distancia-negacion) var(--rotacion-inicial);}
+  0% { transform: var(--distancia-negacion) var(--rotacion-final);}
+}
