@@ -511,6 +511,9 @@ body {
   width: 100%;
 }
 
+.heading_accesible{
+  visibility: hidden;
+}
 .testimonial-box {
   width: 22rem;
   box-shadow: .125rem .125rem 1.875rem rgba(0, 0, 0, 0.1);
