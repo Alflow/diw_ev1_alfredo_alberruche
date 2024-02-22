@@ -4,8 +4,10 @@ menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
     menuBtn.classList.add("open");
     menuOpen = true;
+    menuBtn.ariaExpanded="true";
   } else {
     menuBtn.classList.remove("open");
     menuOpen = false;
+    menuBtn.ariaExpanded="false";
   }
 });
