@@ -1,173 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INICIO · OASIS TRIPS</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans:wght@900&family=Roboto+Condensed:wght@900&family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-  </head>
-  <body class="grid-container tema-claro">
-    <header class="header">
-      <div class="ct-logo">
-        <a href="index.html"
-          ><img src="media/LOGO/LOGO-CLARO.png" alt="logotipo de oasis trips"
-        /></a>
-      </div>
-      <h1>OASIS TRIPS</h1>
-      <div class="boton_hamburguesa">
-        <label for="btn_burguer" href="#" class="burguer-container">
-          <input id="btn_burguer" type="checkbox">
-          <span class="btn-burguer"></span>
-        </label>
-      </div>
-    </header>
-    <nav class="navbar">
-      <a href="">Hoteles</a>
-      <a href="">Villas</a>
-      <a href="">Apartamentos</a>
-      <a href="">Visitas guiadas</a>
-      <a href="">Restaurantes</a>
-    </nav>
 
-    <article class="main">
-      <h2 class="section-title">Destinos más populares</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INICIO · OASIS TRIPS</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans:wght@900&family=Roboto+Condensed:wght@900&family=Roboto:wght@300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
 
-      
-      <!-- CARD DINÁMICA CON MAPA QUE CARGARÍA LA VILLA SELECCIONADA DEL MAPA -->
-      <div class="mapExplorer">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8854.12898899111!2d115.15393826370178!3d-8.685340937220412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2471a21bd9fd5%3A0x8f515250d65457ed!2sNyaman%20Villas!5e0!3m2!1ses!2ses!4v1702049781856!5m2!1ses!2ses"
-          width="300"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <div class="reserva-card">
-          <div class="reserva-card-imagen">
-            <!-- <img src="media/A.jpg" alt=""> -->
-          </div>
-          <h2 class="reserva-card-info1">ESTANCIA EN VILA NYAMAN</h2>
-          <h2 class="reserva-card-info1">7 NOCHES</h2>
-        </div>
-        
-      </div>
+<body class="grid-container tema-claro">
+  <header class="header">
+    <div class="ct-logo">
+      <a href="index.html"><img src="media/LOGO/LOGO-CLARO.png" alt="logotipo de oasis trips" /></a>
+    </div>
+    <h1>OASIS TRIPS</h1>
+    <label for="btn_burguer" class="burguer-container">
+      <button id="botonBurger" class="boton_hamburguesa" aria-label="Botón hamburguesa para acceder al menú"
+        aria-controls="menuPrincipal">
+        <input id="btn_burguer" type="checkbox">
+        <span class="btn-burguer"></span>
+      </button>
+    </label>
+  </header>
+  <nav class="navbar">
+    <a href="#" aria-label="Enlace a Hoteles">Hoteles</a>
+    <a href="#" aria-label="Enlace a Villas">Villas</a>
+    <a href="#" aria-label="Enlace a  Apartamentos">Apartamentos</a>
+    <a href="#" aria-label="Enlace a Visitas guiadas">Visitas guiadas</a>
+    <a href="#" aria-label="Enlace a Restaurantes">Restaurantes</a>
+  </nav>
 
-      <!-----------VILLAS CERCANAS A LA SELECCIONADA (ZONA QUE ABARQUE EL POSICIONAMIENTO QUE MANEJA EL IFRAME)--------------->
-      <div class="explorarCarrusel">
-        <div class="container">
-          <div class="cards">
-            <div class="card-item">
-              <a href="villaDetalle.html">
-                <div class="card-image">
-                  <img src="media/A.jpg" alt="">
-                </div>
-                <div class="card-info">
-                  <h2 class="card-title">Beachfront Villa</h2>
-                  <p class="card-intro">3 noches <br> 2 huéspedes</p>
-    
-                </div>
-              </a>
-            </div>
+  <article class="main" role="main">
+    <dialog id="miDialogo">
+      <div class="popup">
+        <button class="dismiss" type="button" aria-label="Cerrar">X</button>
+        <div class="popup-cabecera">
+          <div class="imagen-popup">
+            <img src="media/person_FILL0_wght400_GRAD0_opsz24.svg" alt="">
           </div>
-          <div class="cards">
-            <div class="card-item">
-              <div class="card-image">
-                <img src="media/B.jpg" alt="">
-              </div>
-              <div class="card-info">
-                <h2 class="card-title">Mountain retreat</h2>
-                <p class="card-intro">3 noches <br> 4 huéspedes</p>
-              </div>
-            </div>
+          <div class="content">
+            <span class="popup-title">Bienvenido:</span>
+            <p class="message">Por favor, ingrese sus datos de acceso</p>
+            <a href="">Acceder</a>
+            <a href="">Registrarme</a>
           </div>
-          <div class="cards">
-            <div class="card-item">
-              <div class="card-image">
-                <img src="media/c.jpg" alt="">
-              </div>
-              <div class="card-info">
-                <h2 class="card-title">Hotel 5 estrellas</h2>
-                <p class="card-intro">7 noches <br> 2 huéspedes</p>
-              </div>
-            </div>
+
+          <div class="actions">
+            <hr>
+            <a href="" aria-label="Enlace a Hoteles">Hoteles</a>
+            <a href="" aria-label="Enlace a Villas">Villas</a>
+            <a href="" aria-label="Enlace a  Apartamentos">Apartamentos</a>
+            <a href="" aria-label="Enlace a Visitas guiadas">Visitas guiadas</a>
+            <a href="" aria-label="Enlace a Restaurantes">Restaurantes</a>
           </div>
-          <div class="cards">
-            <div class="card-item">
-              <div class="card-image">
-                <img src="media/f.jpg" alt="">
-              </div>
-              <div class="card-info">
-                <h2 class="card-title">Vila nirigua</h2>
-                <p class="card-intro">4 noches <br>3 huéspedes</p>
-              </div>
-            </div>
-          </div>
-          <div class="cards">
-            <div class="card-item">
-              <div class="card-image">
-                <img src="media/D.jpg" alt="">
-              </div>
-              <div class="card-info">
-                <h2 class="card-title">Apartamento minimalista</h2>
-                <p class="card-intro">2 noches <br> 2 huéspedes</p>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="cards">
-            <div class="card-item">
-              <div class="card-image">
-                <img src="media/D.jpg" alt="">
-              </div>
-              <div class="card-info">
-                <h2 class="card-title">Apartamento minimalista</h2>
-                <p class="card-intro">2 noches <br> 2 huéspedes</p>
-              </div>
-            </div>
-          </div> -->
-          
-  
         </div>
       </div>
-      
+    </dialog>
+    <h2 class="section-title">Destinos más populares</h2>
 
-      <!-- SECCION EXPLORAR -->
-    </article>
-    <footer class="footer">
-      <small>OASIS ITEMS © · Alfredo Alberruche</small>
-    </footer>
 
-    <script>
-      const menuBtn = document.querySelector(".menu-btn");
-      let menuOpen = false;
-      menuBtn.addEventListener("click", () => {
-        if (!menuOpen) {
-          menuBtn.classList.add("open");
-          menuOpen = true;
-        } else {
-          menuBtn.classList.remove("open");
-          menuOpen = false;
-        }
-      });
-    </script>
-  </body>
+    <!-- CARD DINÁMICA CON MAPA QUE CARGARÍA LA VILLA SELECCIONADA DEL MAPA -->
+    <div class="mapExplorer">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8854.12898899111!2d115.15393826370178!3d-8.685340937220412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2471a21bd9fd5%3A0x8f515250d65457ed!2sNyaman%20Villas!5e0!3m2!1ses!2ses!4v1702049781856!5m2!1ses!2ses"
+        width="300" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" tabindex="0"></iframe>
+      <div class="reserva-card" tabindex="0">
+        <div class="reserva-card-imagen">
+          <!-- <img src="media/A.jpg" alt=""> -->
+        </div>
+        <h2 class="reserva-card-info1">ESTANCIA EN VILA NYAMAN</h2>
+        <h2 class="reserva-card-info1">7 NOCHES</h2>
+      </div>
+
+    </div>
+
+    <!--VILLAS CERCANAS A LA SELECCIONADA (ZONA QUE ABARQUE EL POSICIONAMIENTO QUE MANEJA EL IFRAME)-->
+    <div class="explorarCarrusel" role="list" tabindex="0">
+      <div class="container">
+        <div class="cards" role="listitem" tabindex="0">
+          <div class="card-item">
+            <a href="villaDetalle.html">
+              <div class="card-image">
+                <img src="media/A.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <h2 class="card-title">Beachfront Villa</h2>
+                <p class="card-intro">3 noches <br> 2 huéspedes</p>
+
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cards" role="listitem" tabindex="0">
+          <div class="card-item">
+            <div class="card-image">
+              <img src="media/B.jpg" alt="">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Mountain retreat</h2>
+              <p class="card-intro">3 noches <br> 4 huéspedes</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards" role="listitem" tabindex="0">
+          <div class="card-item">
+            <div class="card-image">
+              <img src="media/c.jpg" alt="">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Hotel 5 estrellas</h2>
+              <p class="card-intro">7 noches <br> 2 huéspedes</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards" role="listitem" tabindex="0">
+          <div class="card-item">
+            <div class="card-image">
+              <img src="media/f.jpg" alt="">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Vila nirigua</h2>
+              <p class="card-intro">4 noches <br>3 huéspedes</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards" role="listitem" tabindex="0">
+          <div class="card-item">
+            <div class="card-image">
+              <img src="media/D.jpg" alt="">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Apartamento minimalista</h2>
+              <p class="card-intro">2 noches <br> 2 huéspedes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SECCION EXPLORAR -->
+  </article>
+  <footer class="footer">
+    <small>OASIS ITEMS © · Alfredo Alberruche</small>
+  </footer>
+
+  <script src="scripts/burguer.js"></script>
+  <script src="scripts/loginPopup.js"></script>         
+  <script src="scripts/menu.js"></script>
+</body>
+
 </html>

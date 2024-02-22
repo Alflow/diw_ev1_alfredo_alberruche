@@ -21,8 +21,9 @@
 <body class="grid-container tema-claro">
   <header class="header">
     <div class="ct-logo">
-      <a href="index.html"><img src="media/LOGO/LOGO-CLARO.png"
-          alt="logotipo de oasis trips que lleva al inicio de la página" /></a>
+      <a href="index.html">
+        <img src="media/LOGO/LOGO-CLARO.png" alt="logotipo de oasis trips que lleva al inicio de la página">
+      </a>
     </div>
     <h1>OASIS TRIPS</h1>
 
@@ -35,7 +36,7 @@
     </label>
 
   </header>
-  <nav class="navbar" role="navigation">
+  <nav class="navbar">
     <a href="#" aria-label="Enlace a Hoteles">Hoteles</a>
     <a href="#" aria-label="Enlace a Villas">Villas</a>
     <a href="#" aria-label="Enlace a  Apartamentos">Apartamentos</a>
@@ -51,7 +52,7 @@
         <button class="dismiss" type="button" aria-label="Cerrar">X</button>
         <div class="popup-cabecera">
           <div class="imagen-popup">
-            <img src="media/person_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <img src="media/person_FILL0_wght400_GRAD0_opsz24.svg" alt="logotipo de persona para iniciar sesión">
           </div>
           <div class="content">
             <span class="popup-title">Bienvenido:</span>
@@ -75,7 +76,7 @@
     <!-- SECCIÓN DE VILLAS POPULARES -->
     <h2 class="section-title">Destinos más populares</h2>
 
-    <div class="container">
+    <div class="container" role="grid">
       <div class="cards" tabindex="0">
         <div class="card-item">
           <a href="villaDetalle.html" aria-label="Más detalles sobre Beachfront Villa">
@@ -92,7 +93,7 @@
       </div>
       <div class="cards" tabindex="0">
         <div class="card-item">
-          <a href="villaDetalle.html" aria-label="Más detalles sobre Mountain Retrar">
+          <a href="villaDetalle.html" aria-label="Más detalles sobre Mountain Retrait">
             <div class="card-image">
               <img src="media/B.jpg"
                 alt="fotografía del resort Mountain retreat que muestra la piscina y zona chillout">
@@ -169,17 +170,17 @@
     <!-- SECCION RESEÑAS -->
     <section id="testimonials" aria-labelledby="testimonialsHeading">
 
-      <div id="testimonialsHeading" class="testimonial-heading">Reseñas de nuestros clientes:
+      <div id="testimonialsHeading" class="testimonial-heading" tabindex="0">Reseñas de nuestros clientes:
       </div>
-      <!--contenedor------>
+      <!--contenedor-->
       <div class="testimonial-box-container">
-        <!--CAJA 1-------------->
+        <!--CAJA 1-->
         <article class="testimonial-box" aria-labelledby="review1Heading" tabindex="0">
-          <!--top-------------->
+          <!--top-->
           <div class="box-top">
-            <!--perfil----->
+            <!--perfil-->
             <div class="profile" aria-label="perfil del usuario">
-              <!--imagen---->
+              <!--imagen-->
               <div class="profile-img">
                 <img src="media/users-fotos/user1.jpg"
                   alt="fotografía de perfil de la reseña del usuario Armando Bronca" />
@@ -190,8 +191,8 @@
                 <span>@armandito</span>
               </div>
             </div>
-            <!--reseña------>
-            <div class="reviews" aria-label="4 de 5 estrellas">
+            <!--reseña-->
+            <div class="reviews" tabindex="0" aria-label="4 de 5 estrellas">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -200,7 +201,7 @@
             </div>
           </div>
           <h3 class="heading_accesible" id="review1Heading">Armando Bronca</h3>
-          <div id="review1" class="client-comment">
+          <div id="review1" class="client-comment" tabindex="0">
             <p>Dejé PHP. Tomé un vuelo a Bali y desde entonces soy feliz</p>
           </div>
         </article>
@@ -208,16 +209,15 @@
           <div class="box-top">
             <div class="profile" aria-label="perfil del usuario" id="review2">
               <div class="profile-img">
-                <img src="media/users-fotos/user2.jpg"
-                  alt="fotografía de perfil de la reseña del usuario Elsa Belotodo" />
+                <img src="media/users-fotos/user2.jpg" alt="fotografía de perfil de la reseña del usuario Elsa Belotodo" />
               </div>
               <div class="name-user">
                 <strong>Elsa Belotodo</strong>
                 <span>@ElsaBelo</span>
               </div>
             </div>
-            <!--estrellas------>
-            <div class="reviews" aria-label="5 de 5 estrellas">
+            <!--estrellas-->
+            <div class="reviews" aria-label="5 de 5 estrellas" tabindex="0">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -225,45 +225,39 @@
               <i class="fas fa-star"></i><!--Empty star-->
             </div>
           </div>
-          <!--comentario---------------------------------------->
+          <!--comentario-->
           <h3 class="heading_accesible" id="review2Heading">Reseña de Elsa Belotodo</h3>
-          <div aria-labelledby="review2"  class="client-comment">
-            <p>Lo de tomarse un coctel en un coco escuchando las olas del mar es otro level. Tanto como conseguir una
-              web responsiva sin framework</p>
+          <div class="client-comment" aria-labelledby="review2Heading" tabindex="0">
+            <p tabindex="0">Lo de tomarse un coctel en un coco escuchando las olas del mar es otro level. Tanto como conseguir una web responsiva sin framework</p>
           </div>
         </article>
-        <!--CAJA 3-------------->
+        
+        <!--CAJA 3-->
         <article class="testimonial-box" aria-labelledby="review3Heading" tabindex="0">
-          <!--top------------------------->
           <div class="box-top">
-            <!--perfil----->
             <div class="profile" aria-label="perfil del usuario">
-              <!--imagen---->
               <div class="profile-img">
-                <img src="media/users-fotos/user3.jpg"
-                  alt="fotografía de perfil de la reseña del usuario Mike Acelgas" />
+                <img src="media/users-fotos/user3.jpg" alt="fotografía de perfil de la reseña del usuario Mike Acelgas" />
               </div>
-              <!--name-y-username-->
               <div class="name-user">
                 <strong>Mike Acelgas</strong>
                 <span>@miky</span>
               </div>
             </div>
-
-            <div class="reviews" aria-label="4 de 5 estrellas">
+            <div class="reviews" aria-label="4 de 5 estrellas" tabindex="0">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="far fa-star"></i><!--Empty star for the 5th star-->
             </div>
           </div>
           <h3 class="heading_accesible" id="review3Heading">Reseña de Mike Acelgas</h3>
-          <div id="review3" class=" client-comment">
-            <p>Tras horas intentando hacer una web sin framework me desquicié. Llamé a OASIS y me aconsejaron tirar el
-              portátil y marchar a Bali. Lo mejor que pude hacer. Ahora soy guía turístico y profesor de surf.</p>
+          <div class="client-comment" aria-labelledby="review3Heading" tabindex="0">
+            <p tabindex="0">Tras horas intentando hacer una web sin framework me desquicié. Llamé a OASIS y me aconsejaron tirar el portátil y marchar a Bali. Lo mejor que pude hacer. Ahora soy guía turístico y profesor de surf.</p>
           </div>
         </article>
+        
       </div>
     </section>
 
@@ -275,7 +269,7 @@
     <section class="explorar">
       <a href="#" class="ver-mas" aria-label="Ver más sitios para explorar"> Ver más </a>
 
-      <div class="lugar" tabindex="0">
+      <div class="lugar" tabindex="0" role="listitem">
         <img src="media/selva.jpg" alt="Fotografía icónica del lugar Ubud Monkey Forest">
         <div class="info">
           <h3>Ubud Monkey Forest</h3>
@@ -283,7 +277,7 @@
           <p>Interactúa con monos en su hábitat natural en este maravilloso lugar</p>
         </div>
       </div>
-      <div class="lugar" tabindex="0">
+      <div class="lugar" tabindex="0" role="listitem">
         <img src="media/templo.jpg" alt="Fotografía icónica del lugar Tanah Lot Temple">
         <div class="info">
           <h3>Tanah Lot Temple</h3>
@@ -291,7 +285,7 @@
           <p>Visita el famoso templo del í y disfruta de una puesta de sol de película</p>
         </div>
       </div>
-      <div class="lugar" tabindex="0">
+      <div class="lugar" tabindex="0" role="listitem">
         <img src="media/PLAYA.jpg" alt="Fotografía icónica del lugar Seminyak Beach">
         <div class="info">
           <h3>Seminyak Beach</h3>
@@ -310,7 +304,7 @@
         #VIAJANDO CON OASIS
       </h2>
       <h3>Sube a Instagram tus mejores recuerdos de Bali con nostros</h3>
-      <div class="gallery">
+      <div class="gallery" role="grid">
 
         <div class="gallery-item" tabindex="0">
           <img class="gallery-image"
