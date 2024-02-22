@@ -167,20 +167,18 @@
     </a>
 
     <!-- SECCION RESEÑAS -->
-
-    <section id="testimonials">
-
-      <div class="testimonial-heading">
-
+    <section id="testimonials" aria-labelledby="testimonialsHeading">
+      
+      <div  id="testimonialsHeading" class="testimonial-heading">Reseñas de nuestros clientes:
       </div>
       <!--contenedor------>
       <div class="testimonial-box-container">
         <!--CAJA 1-------------->
-        <div class="testimonial-box">
+        <article class="testimonial-box" aria-labeledby="review1">
           <!--top------------------------->
           <div class="box-top">
             <!--perfil----->
-            <div class="profile">
+            <div class="profile" aria-label="perfil del usuario">
               <!--imagen---->
               <div class="profile-img">
                 <img src="media/users-fotos/user1.jpg"
@@ -193,7 +191,7 @@
               </div>
             </div>
             <!--reseña------>
-            <div class="reviews">
+            <div class="reviews" aria-label="4 de 5 estrellas">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -201,30 +199,24 @@
               <i class="far fa-star"></i><!-- estrella vacia-->
             </div>
           </div>
-
-          <div class="client-comment">
+          <div id="review1" class="client-comment">
             <p>Dejé PHP. Tomé un vuelo a Bali y desde entonces soy feliz</p>
           </div>
-        </div>
-
-        <div class="testimonial-box">
-
+        </article>
+        <article class="testimonial-box" aria-labeledby="review2">
           <div class="box-top">
-
-            <div class="profile">
-
+            <div class="profile" aria-label="perfil del usuario">
               <div class="profile-img">
                 <img src="media/users-fotos/user2.jpg"
                   alt="fotografía de perfil de la reseña del usuario Elsa Belotodo" />
               </div>
-
               <div class="name-user">
                 <strong>Elsa Belotodo</strong>
                 <span>@ElsaBelo</span>
               </div>
             </div>
             <!--estrellas------>
-            <div class="reviews">
+            <div class="reviews" aria-label="5 de 5 estrellas">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -233,17 +225,17 @@
             </div>
           </div>
           <!--comentario---------------------------------------->
-          <div class="client-comment">
+          <div id="review2 "class="client-comment">
             <p>Lo de tomarse un coctel en un coco escuchando las olas del mar es otro level. Tanto como conseguir una
               web responsiva sin framework</p>
           </div>
-        </div>
+        </article>
         <!--CAJA 3-------------->
-        <div class="testimonial-box">
+        <article class="testimonial-box" aria-labeledby="review3">
           <!--top------------------------->
           <div class="box-top">
             <!--perfil----->
-            <div class="profile">
+            <div class="profile" aria-label="perfil del usuario">
               <!--imagen---->
               <div class="profile-img">
                 <img src="media/users-fotos/user3.jpg"
@@ -256,7 +248,7 @@
               </div>
             </div>
 
-            <div class="reviews">
+            <div class="reviews" aria-label="4 de 5 estrellas">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -265,11 +257,11 @@
             </div>
           </div>
 
-          <div class="client-comment">
+          <div id="review3 class="client-comment">
             <p>Tras horas intentando hacer una web sin framework me desquicié. Llamé a OASIS y me aconsejaron tirar el
               portátil y marchar a Bali. Lo mejor que pude hacer. Ahora soy guía turístico y profesor de surf.</p>
           </div>
-        </div>
+        </article>
 
 
       </div>
