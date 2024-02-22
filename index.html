@@ -19,34 +19,36 @@
 </head>
 
 <body class="grid-container tema-claro">
-  <header class="header">
+  <header class="header" role="navigation">
     <div class="ct-logo">
-      <a href="index.html"><img src="media/LOGO/LOGO-CLARO.png" alt="logotipo de oasis trips que lleva al inicio de la página" /></a>
+      <a href="index.html"><img src="media/LOGO/LOGO-CLARO.png"
+          alt="logotipo de oasis trips que lleva al inicio de la página" /></a>
     </div>
     <h1>OASIS TRIPS</h1>
 
-    <button id="botonBurger" class="boton_hamburguesa" role="button" tabindex="0" aria-label="Botón hamburguesa para acceder al menú" aria-controls="menuPrincipal" >
+    <button id="botonBurger" class="boton_hamburguesa" role="button" aria-label="Botón hamburguesa para acceder al menú"
+      aria-controls="menuPrincipal">
       <label for="btn_burguer" class="burguer-container">
         <input id="btn_burguer" type="checkbox">
         <span class="btn-burguer"></span>
       </label>
     </button>
-    
-  </header>
-  <nav class="navbar">
-    <a href="">Hoteles</a>
-    <a href="">Villas</a>
-    <a href="">Apartamentos</a>
-    <a href="">Visitas guiadas</a>
-    <a href="">Restaurantes</a>
-  </nav>
-  
 
-  <article class="main">
+  </header>
+  <nav class="navbar" role="navigation">
+    <a href="" role="link" aria-label="Enlace a Hoteles">Hoteles</a>
+    <a href="" role="link" aria-label="Enlace a Villas">Villas</a>
+    <a href="" role="link" aria-label="Enlace a  Apartamentos">Apartamentos</a>
+    <a href="" role="link" aria-label="Enlace a Visitas guiadas">Visitas guiadas</a>
+    <a href="" role="link" aria-label="Enlace a Restaurantes">Restaurantes</a>
+  </nav>
+
+
+  <article class="main" role="main">
 
     <dialog id="miDialogo">
       <div class="popup">
-        <button class="dismiss" type="button">X</button>
+        <button class="dismiss" type="button" aria-label="Cerrar">X</button>
         <div class="popup-cabecera">
           <div class="imagen-popup">
             <img src="media/person_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -57,26 +59,26 @@
             <a href="">Acceder</a>
             <a href="">Registrarme</a>
           </div>
-          
+
           <div class="actions">
             <hr>
-            <a href="">Hoteles</a>
-            <a href="">Villas</a>
-            <a href="">Apartamentos</a>
-            <a href="">Visitas guiadas</a>
-            <a href="">Restaurantes</a>
+            <a href="" role="link" aria-label="Enlace a Hoteles">Hoteles</a>
+            <a href="" role="link" aria-label="Enlace a Villas">Villas</a>
+            <a href="" role="link" aria-label="Enlace a  Apartamentos">Apartamentos</a>
+            <a href="" role="link" aria-label="Enlace a Visitas guiadas">Visitas guiadas</a>
+            <a href="" role="link" aria-label="Enlace a Restaurantes">Restaurantes</a>
           </div>
         </div>
       </div>
-   </dialog>
-   
+    </dialog>
+
     <!-- SECCIÓN DE VILLAS POPULARES -->
     <h2 class="section-title">Destinos más populares</h2>
 
     <div class="container">
       <div class="cards">
         <div class="card-item">
-          <a href="villaDetalle.html">
+          <a href="villaDetalle.html" aria-label="Más detalles sobre Beachfront Villa">
             <div class="card-image">
               <img src="media/A.jpg" alt="fotografía frontal del la villa Beachfront">
             </div>
@@ -90,52 +92,61 @@
       </div>
       <div class="cards">
         <div class="card-item">
-          <a href="villaDetalle.html">
-          <div class="card-image">
-            <img src="media/B.jpg" alt="fotografía del resort Mountain retreat que muestra la piscina y zona chillout">
-          </div>
-          <div class="card-info">
-            <h2 class="card-title">Mountain retreat</h2>
-            <p class="card-intro">3 noches <br> 4 huéspedes</p>
-          </div>
+          <a href="villaDetalle.html" aria-label="Más detalles sobre Mountain Retrar">
+            <div class="card-image">
+              <img src="media/B.jpg"
+                alt="fotografía del resort Mountain retreat que muestra la piscina y zona chillout">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Mountain retreat</h2>
+              <p class="card-intro">3 noches <br> 4 huéspedes</p>
+            </div>
           </a>
         </div>
       </div>
       <div class="cards">
         <div class="card-item">
-          <div class="card-image">
-            <img src="media/c.jpg" alt="Fotografía del Hotel 5 estrellas de estilo Bungalows más famoso de Bali">
-          </div>
-          <div class="card-info">
-            <h2 class="card-title">Hotel 5 estrellas</h2>
-            <p class="card-intro">7 noches <br> 2 huéspedes</p>
-          </div>
+          <a href="villaDetalle.html" aria-label="Más detalles sobre Hotel 5 estrellas">
+            <div class="card-image">
+              <img src="media/c.jpg" alt="Fotografía del Hotel 5 estrellas de estilo Bungalows más famoso de Bali">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Hotel 5 estrellas</h2>
+              <p class="card-intro">7 noches <br> 2 huéspedes</p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="cards">
         <div class="card-item">
-          <div class="card-image">
-            <img src="media/D.jpg" alt="Fotografía del interior del apartamento minimalista, con un diseño sobrio y acogedor">
-          </div>
-          <div class="card-info">
-            <h2 class="card-title">Apartamento minimalista</h2>
-            <p class="card-intro">2 noches <br> 2 huéspedes</p>
-          </div>
+          <a href="villaDetalle.html" aria-label="Más detalles sobre Apartamento minimalista">
+            <div class="card-image">
+              <img src="media/D.jpg"
+                alt="Fotografía del interior del apartamento minimalista, con un diseño sobrio y acogedor">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Apartamento minimalista</h2>
+              <p class="card-intro">2 noches <br> 2 huéspedes</p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="cards">
         <div class="card-item">
-          <div class="card-image">
-            <img src="media/e.jpg" alt="Fotografía del interior del apartamento Villa Neymar">
-          </div>
-          <div class="card-info">
-            <h2 class="card-title">Villa Neymar</h2>
-            <p class="card-intro">4 noches <br> 1 huésped</p>
-          </div>
+          <a href="villaDetalle.html" aria-label="Más detalles sobre Villa Neymar">
+            <div class="card-image">
+              <img src="media/e.jpg" alt="Fotografía del interior del apartamento Villa Neymar">
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Villa Neymar</h2>
+              <p class="card-intro">4 noches <br> 1 huésped</p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="cards">
         <div class="card-item">
+          <a href="villaDetalle.html" aria-label="Más detalles sobre Villa nirigua">
           <div class="card-image">
             <img src="media/f.jpg" alt="Fotografía principal de la entrada de Vila nirigua">
           </div>
@@ -144,6 +155,7 @@
             <p class="card-intro">4 noches <br>3 huéspedes</p>
           </div>
         </div>
+      </a>
       </div>
     </div>
 
@@ -171,7 +183,8 @@
             <div class="profile">
               <!--imagen---->
               <div class="profile-img">
-                <img src="media/users-fotos/user1.jpg" alt="fotografía de perfil de la reseña del usuario Armando Bronca"/>
+                <img src="media/users-fotos/user1.jpg"
+                  alt="fotografía de perfil de la reseña del usuario Armando Bronca" />
               </div>
               <!--nombre y usuario-->
               <div class="name-user">
@@ -201,7 +214,8 @@
             <div class="profile">
 
               <div class="profile-img">
-                <img src="media/users-fotos/user2.jpg" alt="fotografía de perfil de la reseña del usuario Elsa Belotodo" />
+                <img src="media/users-fotos/user2.jpg"
+                  alt="fotografía de perfil de la reseña del usuario Elsa Belotodo" />
               </div>
 
               <div class="name-user">
@@ -232,7 +246,8 @@
             <div class="profile">
               <!--imagen---->
               <div class="profile-img">
-                <img src="media/users-fotos/user3.jpg" alt="fotografía de perfil de la reseña del usuario Mike Acelgas" />
+                <img src="media/users-fotos/user3.jpg"
+                  alt="fotografía de perfil de la reseña del usuario Mike Acelgas" />
               </div>
               <!--name-y-username-->
               <div class="name-user">
@@ -249,13 +264,13 @@
               <i class="far fa-star"></i>
             </div>
           </div>
-          
+
           <div class="client-comment">
             <p>Tras horas intentando hacer una web sin framework me desquicié. Llamé a OASIS y me aconsejaron tirar el
               portátil y marchar a Bali. Lo mejor que pude hacer. Ahora soy guía turístico y profesor de surf.</p>
           </div>
         </div>
-        
+
 
       </div>
     </section>
@@ -265,7 +280,7 @@
 
     <!-- SECCION EXPLORAR -->
     <h2 class="section-title">Explora Bali</h2>
-      <div class="explorar">
+    <div class="explorar">
       <a href="#" class="ver-mas"> Ver más </a>
 
       <div class="lugar">
