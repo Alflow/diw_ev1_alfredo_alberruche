@@ -15,6 +15,14 @@
   --color-secundario-oscuro: #161515; /* Un gris oscuro para fondos o elementos secundarios */
 }
 
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* Añadir para asegurar que el texto no se envuelva */
+}
+
 /* Uso de colores en elementos */
 body {
   background-color: var(--color-primario-oscuro);
